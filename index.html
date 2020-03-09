@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer-Berechnung</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Einkommen­steuer­rechner</h1>
+    </header>
+    <div class="rechner">
+
+        <h2>Jahr:</h2>
+        <select id="jahr">
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+        </select></span>
+        <h2>zu versteuerndes Einkommen:</h2>
+        <input type="text" placeholder="   Einkommen in € " id="zve">
+        <br>
+        <br>
+        <div class="radio">
+            <input type="checkbox" value="Einzelveranlagung" id="Einzelveranlagung">
+            <label for="Einzelveranlagung">Einzelveranlagung</label>
+            <br>
+            <input type="checkbox" value="Zusammenveranlagung" id="Zusammenveranlagung">
+            <label for="Zusammenveranlagung">Zusammenveranlagung</label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <button id="submit" onclick="myFunc()">Berechne</button>
+        <br>
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
